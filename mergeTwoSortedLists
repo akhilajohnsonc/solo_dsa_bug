@@ -1,0 +1,22 @@
+class Solution {
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        final ListNode result = new ListNode();
+        ListNode sortedlist = result;
+        while(list1!=null && list2!=null){
+            if(list1.val < list2.val){
+                sortedlist.next = list1;
+                list1 = list1.next;
+            }
+            else{
+                sortedlist.next = list2;
+                list2 = list2.next;
+            }
+            sortedlist = sortedlist.next;
+        }
+       if(list1!=null)
+            sortedlist.next = list1;
+       else
+            sortedlist.next = list2;
+        return result.next;
+    }
+}
