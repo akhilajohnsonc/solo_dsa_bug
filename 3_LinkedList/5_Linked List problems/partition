@@ -1,0 +1,19 @@
+//Set the values less than x in first part and values greater than x in second part in a linkedlist
+public LinkedList partition(LinkedList ll, int x) {
+		Node searchnode = ll.head;
+		ll.tail = ll.head;
+		while (searchnode != null) {
+			Node next = searchnode.next;
+			if (searchnode.value < x) {
+				searchnode.next = ll.head;
+				ll.head = searchnode;
+			} else {
+				ll.tail.next = searchnode;
+				ll.tail = searchnode;
+			}
+			searchnode = next;
+		}
+		ll.tail.next = null;
+
+		return ll;
+	}
