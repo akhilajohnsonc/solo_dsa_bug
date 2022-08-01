@@ -1,0 +1,26 @@
+//Input is 2 three digit numbers in reverse order in two linkedlists.Find the sum of numbers and return a linkedlist
+public LinkedList sumlists(LinkedList list1, LinkedList list2) {
+		LinkedList result = new LinkedList();
+		Node list1node = list1.head;
+		Node list2node = list2.head;
+		int rem = 0;
+		int sum = 0;
+		for(int i=0;i<list1.size;i++) {
+			sum = list1node.value + list2node.value +rem;
+			if(result.head == null) {
+				result.createLL(sum%10);
+			}
+			else{
+				result.insertNode(sum%10);
+			}
+		
+			rem= sum/10;
+			if(i<list1.size-1) {
+			list1node = list1node.next;
+			list2node = list2node.next;
+			}
+		}
+		result.traversalLL();
+		return result;
+		
+	}
