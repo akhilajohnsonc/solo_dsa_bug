@@ -1,0 +1,14 @@
+//Delete duplicate nodes in a linkedlist
+public void deleteDups(LinkedList ll) {
+		HashSet set = new HashSet();
+		Node node = ll.head;
+		for (int i = 0; i < ll.size - 1; i++) {
+			set.add(node.value);
+			if (set.contains(node.next.value)) {
+				node.next = node.next.next;
+				ll.size--;
+			}
+			node = node.next;
+		}
+
+	}
