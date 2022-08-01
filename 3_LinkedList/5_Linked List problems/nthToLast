@@ -1,0 +1,10 @@
+//find nth to last element in a linkedist.Example: if n=2 then find 2nd to last element
+public Node nthToLast(LinkedList ll, int n) {
+		Node node = ll.head;
+		for (int i = 0; i < ll.size - n; i++) {
+			node = node.next;
+		}
+		System.out.println(node.value);
+		return node;
+
+	}
