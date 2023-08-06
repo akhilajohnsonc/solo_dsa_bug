@@ -1,4 +1,4 @@
-package com.array;
+package Arrays;
 
 import java.util.Arrays;
 //creating empy array space complexity (mn) time o(1)
