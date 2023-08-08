@@ -21,6 +21,27 @@ Welcome to the Solo DSA Bug repository! 🚀 This is where I'm keeping track of 
 
 ## Contributions Welcome
 
-While this repository primarily serves as my personal DSA playground, I'm open to contributions. If you have improvements, better solutions, or explanations in Java for any of the questions, feel free to fork this repository and submit a pull request.
+While this repository primarily serves as my personal DSA playground, I'm open to contributions. If you have improvements, better solutions, or explanations in Java for any of the questions, follow these steps:
+
+1. **Fork the Repository:** Click the "Fork" button at the top right of this repository to create your own copy.
+
+2. **Clone Your Fork:** Clone your forked repository to your local machine.
+
+3. **Create a Branch:** Create a new branch to work on your contribution:
+   ```
+   git checkout -b feature/your-contribution
+   ```
+
+4. **Make Changes:** Make your improvements, add your solutions, or enhance explanations.
+
+5. **Commit Changes:** Commit your changes with a descriptive commit message.
+
+6. **Push Changes:** Push your changes to your forked repository on GitHub.
+
+7. **Create a Pull Request:** Go back to the original repository and click "New Pull Request." Describe your changes and submit the pull request.
+
+## Connect with Me
+
+Feel free to connect with me on [Twitter](https://twitter.com/akhilajohnsonc) if you have any questions, suggestions, or just want to chat about DSA and coding.
 
 Happy coding and bug hunting! 🐛🔍
