@@ -21,11 +21,11 @@ public class pattern5_pepcoding {
 		for (int i = 1; i <= n; i++) {
 			// for spaces
 			for (int j = 1; j <= space; j++) {
-				System.out.print(" ");
+				System.out.print("  ");
 			}
 			// for stars
 			for (int k = 1; k <= star; k++) {
-				System.out.print("*");
+				System.out.print("* ");
 			}
 			if (i <= n / 2) {
 				space--;
